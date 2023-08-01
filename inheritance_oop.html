@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>es6 in inheritance</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+// Inheritance 
+//--- we can use the method of the other class by the help of the inheritance.
+
+
+// inheritance(es5)=extends(es6)
+
+// class employee{
+
+//     constructor(){
+//         console.log("employee constructor called");
+//     }
+// }
+//     class manager extends employee{
+
+//     }
+// let manager1=new manager();
+
+
+
+
+
+// class employee{
+
+// constructor(){
+//     console.log(20+30)
+// }
+// }
+// class manager extends employee{
+
+// }
+// let manager1=new manager();
+
+
+
+
+// ---here  we can make the object of manager but it automatically call the emplyoee constructor this is 
+// inheritance.
+
+// -----------------------------
+
+
+
+
+
+// ---Super
+
+// />----super keyword is usedto called the constructor of its parent class to 
+// access the parent property and its method.
+
+
+// class neww{
+//     constructor(u,a,g)
+//     {
+//         this.username=u;
+//         this.age=a;
+//         this.gender=g
+
+//     }
+// }
+// class data extends neww{
+
+// }
+// let data1=new data("priya",20,"female");
+// console.log(data1)
+
+
+
+
+
+// SUPER>>>>-----
+// SUPER keyword is used to called the constructor of its perent class to access the perent property and its method.
+
+
+
+
+class employee{
+
+constructor(em){
+    this.user=em
+    
+}
+}
+class manager extends employee{
+    constructor(p,dep){
+        super(p)
+    this.department=dep;
+
+}
+}
+let manager1=new manager("priya",20);
+console.log(manager1)
+</script>
